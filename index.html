@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>vivoCalculator</title>
+        <link rel="icon" href="./assets/icons/calcIcon.png">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <script src="./index.js"></script>
+
+        <div id="calculator">
+            <div id="innerCalc">
+                <h4>CALCULATOR</h4>
+                <div id="textInput">
+                    
+                    <input id="userInput"/>
+                    <p id="result"></p>
+                </div>
+                <div>
+                    <button id="clear" onclick="calc('clear')">AC</button>
+                    <button id="bspace" onclick="calc('bspace')">⌫</button>  
+                    <button id="negate" onclick="calc('negate')">+/-</button>
+                    <button id="divide" onclick="calc('/')">÷</button>
+                </div>
+                <div>
+                    <button id="num7" onclick="calc('7')">7</button>
+                    <button id="num8" onclick="calc('8')">8</button>
+                    <button id="num9" onclick="calc('9')">9</button>
+                    <button id="multi" onclick="calc('*')">×</button>
+                </div>
+                <div>
+                    <button id="num4" onclick="calc('4')">4</button>
+                    <button id="num5" onclick="calc('5')">5</button>
+                    <button id="num6" onclick="calc('6')">6</button>
+                    <button id="sub" onclick="calc('-')">-</button>
+                </div>
+                <div>
+                    <button id="num1" onclick="calc('1')">1</button>
+                    <button id="num2" onclick="calc('2')">2</button>
+                    <button id="num3" onclick="calc('3')">3</button>
+                    <button id="add" onclick="calc('+')">+</button>
+                </div>
+                <div>
+                    <button id="percentage" onclick="calc('%')">%</button>
+                    <button id="num0" onclick="calc('0')">0</button>
+                    <button id="dot" onclick="calc('.')">.</button>
+                    <button id="equal" onclick="calc('=')">=</button>
+                </div>
+            </div>
+                    
+        </div>
+        <script>
+            document.getElementById('userInput').onclick = () => {
+                console.log('listening')
+            }
+        </script>
+    </body>
+</html>
